@@ -78,144 +78,156 @@
         </nav>
       </div>
     </header>
-    <!--================login_part Area =================-->
-
-    <!------ Include the above in your HEAD tag ---------->
-
     <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="" id="loginModal">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3>Have an Account?</h3>
+
+
+      <!-- HERO SECTION-->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
+            <div class="col-lg-6">
+              <h1 class="h2 text-uppercase mb-0">Account</h1>
             </div>
-            <div class="modal-body">
-              <div class="well">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-                  <li><a href="#create" data-toggle="tab">Create Account</a></li>
-                </ul>
-                <div id="myTabContent" class="tab-content">
-                  <div class="tab-pane active in" id="login">
-                    <form class="form-horizontal" action='' method="POST">
-                      <fieldset>
-                        <div id="legend">
-                          <legend class="">Login</legend>
-                        </div>
-                        <div class="control-group">
-                          <!-- Username -->
-                          <label class="control-label" for="username">Username</label>
-                          <div class="controls">
-                            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                          </div>
-                        </div>
+            <div class="col-lg-6 text-lg-right">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-lg-end mb-0 px-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Login</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================login & Register Area =================-->
+      <hr class="my-5">
+      <div class="container forms">
+        <div class="row">
+          <!-- Login -->
+          <div class="col-lg-6">
 
-                        <div class="control-group">
-                          <!-- Password-->
-                          <label class="control-label" for="password">Password</label>
-                          <div class="controls">
-                            <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <!-- Button -->
-                          <div class="controls">
-                            <button class="btn btn-success">Login</button>
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                  <div class="tab-pane fade" id="create">
-                    <form id="tab">
-                      <label>Username</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>First Name</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>Last Name</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>Email</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>Address</label>
-                      <textarea value="Smith" rows="3" class="input-xlarge">
-                            </textarea>
-
-                      <div>
-                        <button class="btn btn-primary">Create Account</button>
-                      </div>
-                    </form>
-                  </div>
+            <form method="POST">
+              <div class="card-header">
+                <legend>Login</legend>
+              </div>
+              <div class="card-body">
+                <!-- USERNAME -->
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email address</label>
+                  <input class="form-control" id="exampleInputEmail" type="text" placeholder="Enter email">
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                  <label for="exampleInputPassword">Password</label>
+                  <input class="form-control" id="exampleInputPassword" type="password" placeholder="Password">
+                </div>
+                <!-- Button and Checkbox -->
+                <div class="form-check form-group container-fluid">
+                  <input class="form-check-input" id="checkbox-1" type="checkbox">
+                  <label class="form-check-label" for="checkbox-1">Remember Me</label>
+                  <button class="btn btn-primary float-right" type="submit">Submit</button>
                 </div>
               </div>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Register -->
+            <form method="POST">
+              <div class="card-header">
+                <legend>Create New Account</legend>
+              </div>
+              <div class="card-body">
+
+                <!-- USERNAME -->
+                <div class="form-group">
+                  <label for="exampleInputEmail">Full Name</label>
+                  <input class="form-control" id="exampleInputEmail" type="text" placeholder="Enter Full Name">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email address</label>
+                  <input class="form-control" id="exampleInputEmail" type="Email" placeholder="Enter email">
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                  <label for="exampleInputPassword">Password</label>
+                  <input class="form-control" id="exampleInputPassword" type="password" placeholder="Password">
+                </div>
+                <div class="container-fluid">
+                  <button class="btn btn-primary float-right" type="submit">Create Account</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <hr class="my-5">
+
+    </div>
+    <!--================login_part end =================-->
+
+    <footer class="bg-dark text-white">
+      <div class="container py-4">
+        <div class="row py-5">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="text-uppercase mb-3">Customer services</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
+              <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+              <li><a class="footer-link" href="#">Online Stores</a></li>
+              <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="text-uppercase mb-3">Company</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link" href="#">What We Do</a></li>
+              <li><a class="footer-link" href="#">Available Services</a></li>
+              <li><a class="footer-link" href="#">Latest Posts</a></li>
+              <li><a class="footer-link" href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase mb-3">Social media</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link" href="#">Twitter</a></li>
+              <li><a class="footer-link" href="#">Instagram</a></li>
+              <li><a class="footer-link" href="#">Tumblr</a></li>
+              <li><a class="footer-link" href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-top pt-4" style="border-color: #1d1d1d !important">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="small text-muted mb-0">&copy; 2020 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-lg-right">
+              <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor"
+                  href="https://bootstraptemple.com/p/bootstrap-ecommerce">Bootstrap Temple</a></p>
             </div>
           </div>
         </div>
       </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
+    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/custom.js"></script>
 
-
-
-      <!--================login_part end =================-->
-
-      <footer class="bg-dark text-white">
-        <div class="container py-4">
-          <div class="row py-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-              <h6 class="text-uppercase mb-3">Customer services</h6>
-              <ul class="list-unstyled mb-0">
-                <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
-                <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
-                <li><a class="footer-link" href="#">Online Stores</a></li>
-                <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-              <h6 class="text-uppercase mb-3">Company</h6>
-              <ul class="list-unstyled mb-0">
-                <li><a class="footer-link" href="#">What We Do</a></li>
-                <li><a class="footer-link" href="#">Available Services</a></li>
-                <li><a class="footer-link" href="#">Latest Posts</a></li>
-                <li><a class="footer-link" href="#">FAQs</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h6 class="text-uppercase mb-3">Social media</h6>
-              <ul class="list-unstyled mb-0">
-                <li><a class="footer-link" href="#">Twitter</a></li>
-                <li><a class="footer-link" href="#">Instagram</a></li>
-                <li><a class="footer-link" href="#">Tumblr</a></li>
-                <li><a class="footer-link" href="#">Pinterest</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="border-top pt-4" style="border-color: #1d1d1d !important">
-            <div class="row">
-              <div class="col-lg-6">
-                <p class="small text-muted mb-0">&copy; 2020 All rights reserved.</p>
-              </div>
-              <div class="col-lg-6 text-lg-right">
-                <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor"
-                    href="https://bootstraptemple.com/p/bootstrap-ecommerce">Bootstrap Temple</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- JavaScript files-->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="vendor/lightbox2/js/lightbox.min.js"></script>
-      <script src="vendor/nouislider/nouislider.min.js"></script>
-      <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
-      <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
-      <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
-      <script src="js/front.js"></script>
-      <script src="js/custom.js"></script>
-     
-      <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    </div>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </div>
 </body>
 
 </html>
