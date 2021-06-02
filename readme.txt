@@ -1,6 +1,6 @@
 ################################################################################################
 
-Readme for Boutique | Ecommerce bootstrap template by Bootstrap Temple 
+Readme for Boutique | Ecommerce bootstrap template by   
  - https://bootstraptemple.com
 
 ################################################################################################
@@ -9,7 +9,7 @@ Hi,
 
 thank you for downloading. Have fun and tell your friends about us ;)
 
-Ondrej, Bootstrap Temple
+Ondrej,  
 
 ---------------------
  CSS
