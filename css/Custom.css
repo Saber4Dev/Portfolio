@@ -54,19 +54,7 @@ h2 em {
     height: 150px;
     resize: none;
   }
-  
-  .contact-form ::-webkit-input-placeholder { /* Edge */
-    color: #7a7a7a;
-  }
-  
-  .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #7a7a7a;
-  }
-  
-  .contact-form ::placeholder {
-    color: #7a7a7a;
-  }
-  
+ 
   .contact-form button {
     display: inline-block;
     font-size: 13px;
@@ -85,6 +73,50 @@ h2 em {
   .contact-form button:hover {
     background-color: #f9735b;
   }
+
+  .icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ed563b;
+    font-size: 30px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 992px) {
+
+    .main-banner .caption h2 {
+      font-size: 64px;
+    }
+    #features {
+      margin-bottom: 110px;
+    }
+    #features .feature-item {
+      margin-bottom: 30px;
+    }
+    #our-classes .tabs-content {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+    .trainer-item {
+      margin-bottom: 30px;
+    }
+    #contact-us #map {
+      margin-bottom: -7px;
+    }
+    #contact-us .contact-form {
+      padding: 30px;
+    }
+    #contact-us .contact-form #contact {
+      padding: 30px;
+    }
+  
+  }
+  
   
   
   
